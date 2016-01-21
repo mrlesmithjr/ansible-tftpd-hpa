@@ -11,7 +11,7 @@ Vagrant.configure(2) do |config|
     tftp.vm.hostname = "tftp"
 
     tftp.vm.network :private_network, ip: "192.168.202.201"
-    tftp.vm.network "forwarded_port", guest: 8080, host: 8080
+    tftp.vm.network "forwarded_port", guest: 69, host: 6969, protocol: "udp"
 
     tftp.vm.provider "virtualbox" do |vb|
       vb.memory = "1024"
